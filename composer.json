@@ -22,6 +22,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/elusivedocks/reporter"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/elusivedocks/mailer"
         }
     ],
     "config": {
@@ -33,7 +37,8 @@
         "php": "~7.2",
         "elusivedocks/router": "dev-experiment",
         "elusivedocks/dispatcher": "dev-experiment",
-        "elusivedocks/reporter": "dev-experiment"
+        "elusivedocks/reporter": "dev-experiment",
+        "elusivedocks/mailer": "dev-experiment"
     },
     "autoload": {
         "psr-4": {
@@ -41,5 +46,6 @@
         }
     },
     "require-dev": {
+        "phpunit/phpunit": "~7.3"
     }
 }
