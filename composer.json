@@ -13,7 +13,11 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/elusivedocks/backbone"
+            "url": "https://github.com/elusivedocks/router"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/elusivedocks/dispatcher"
         }
     ],
     "config": {
@@ -23,7 +27,8 @@
     },
     "require": {
         "php": "~7.2",
-        "elusivedocks/backbone": "dev-experiment"
+        "elusivedocks/dispatcher": "dev-experiment",
+        "elusivedocks/router": "dev-experiment"
     },
     "autoload": {
         "psr-4": {

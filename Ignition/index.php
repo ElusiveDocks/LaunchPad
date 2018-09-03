@@ -5,3 +5,10 @@ require_once(
     '..' . DIRECTORY_SEPARATOR .
     'bootstrap.php'
 );
+
+$routerTransfer = new \ElusiveDocks\Router\Source\Transfer\GenericTransfer();
+$routerRequest = new \ElusiveDocks\Router\Source\Transfer\GenericRequest();
+$routerResponse = $routerTransfer->handle(
+    $routerRequest->capture()
+);
+$routerResponse->send();
