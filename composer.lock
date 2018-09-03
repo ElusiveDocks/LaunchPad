@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "01e0c562144edece340bb0b96efb8329",
+    "content-hash": "61a73caaadd9abf296c2ecfd03fd18c1",
     "packages": [
         {
             "name": "elusivedocks/dispatcher",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ElusiveDocks/Dispatcher.git",
-                "reference": "f47548a9d510b5a91c8ae0e4b867c23441bcb902"
+                "reference": "df83c83e5935642bb840374b3d43d8c7b8314f93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ElusiveDocks/Dispatcher/zipball/f47548a9d510b5a91c8ae0e4b867c23441bcb902",
-                "reference": "f47548a9d510b5a91c8ae0e4b867c23441bcb902",
+                "url": "https://api.github.com/repos/ElusiveDocks/Dispatcher/zipball/df83c83e5935642bb840374b3d43d8c7b8314f93",
+                "reference": "df83c83e5935642bb840374b3d43d8c7b8314f93",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,50 @@
                 "source": "https://github.com/ElusiveDocks/Dispatcher/tree/experiment",
                 "issues": "https://github.com/ElusiveDocks/Dispatcher/issues"
             },
-            "time": "2018-09-03T16:33:57+00:00"
+            "time": "2018-09-03T16:44:40+00:00"
+        },
+        {
+            "name": "elusivedocks/reporter",
+            "version": "dev-experiment",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ElusiveDocks/Reporter.git",
+                "reference": "ba98223be18af8c3069068b89c55750f12dd4532"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ElusiveDocks/Reporter/zipball/ba98223be18af8c3069068b89c55750f12dd4532",
+                "reference": "ba98223be18af8c3069068b89c55750f12dd4532",
+                "shasum": ""
+            },
+            "require": {
+                "filp/whoops": "~2.2",
+                "php": "~7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~7.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ElusiveDocks\\Reporter\\": "\\"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gerd Christian Kunze",
+                    "email": "gerdchristian.kunze@googlemail.com"
+                }
+            ],
+            "description": "indescribable",
+            "support": {
+                "source": "https://github.com/ElusiveDocks/Reporter/tree/experiment",
+                "issues": "https://github.com/ElusiveDocks/Reporter/issues"
+            },
+            "time": "2018-09-03T18:20:56+00:00"
         },
         {
             "name": "elusivedocks/router",
@@ -54,12 +97,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ElusiveDocks/Router.git",
-                "reference": "3e5e2282329c98d920478b023e135cd3dcaff209"
+                "reference": "44fce92284d8ae9f8dd06d73ca6e0c57937333ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ElusiveDocks/Router/zipball/3e5e2282329c98d920478b023e135cd3dcaff209",
-                "reference": "3e5e2282329c98d920478b023e135cd3dcaff209",
+                "url": "https://api.github.com/repos/ElusiveDocks/Router/zipball/44fce92284d8ae9f8dd06d73ca6e0c57937333ec",
+                "reference": "44fce92284d8ae9f8dd06d73ca6e0c57937333ec",
                 "shasum": ""
             },
             "require": {
@@ -91,7 +134,115 @@
                 "source": "https://github.com/ElusiveDocks/Router/tree/experiment",
                 "issues": "https://github.com/ElusiveDocks/Router/issues"
             },
-            "time": "2018-09-03T16:37:31+00:00"
+            "time": "2018-09-03T18:11:45+00:00"
+        },
+        {
+            "name": "filp/whoops",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "181c4502d8f34db7aed7bfe88d4f87875b8e947a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/181c4502d8f34db7aed7bfe88d4f87875b8e947a",
+                "reference": "181c4502d8f34db7aed7bfe88d4f87875b8e947a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9 || ^7.0",
+                "psr/log": "^1.0.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9 || ^1.0",
+                "phpunit/phpunit": "^4.8.35 || ^5.7",
+                "symfony/var-dumper": "^2.6 || ^3.0 || ^4.0"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Pretty print complex values better with var-dumper available",
+                "whoops/soap": "Formats errors as SOAP responses"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Whoops\\": "src/Whoops/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Filipe Dobreira",
+                    "homepage": "https://github.com/filp",
+                    "role": "Developer"
+                }
+            ],
+            "description": "php error handling for cool kids",
+            "homepage": "https://filp.github.io/whoops/",
+            "keywords": [
+                "error",
+                "exception",
+                "handling",
+                "library",
+                "throwable",
+                "whoops"
+            ],
+            "time": "2018-03-03T17:56:25+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2016-10-10T12:19:37+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -288,8 +439,9 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "elusivedocks/router": 20,
         "elusivedocks/dispatcher": 20,
-        "elusivedocks/router": 20
+        "elusivedocks/reporter": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
