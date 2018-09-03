@@ -1,0 +1,35 @@
+{
+    "name": "elusivedocks/launchpad",
+    "description": "indescribable",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gerd Christian Kunze",
+            "email": "gerdchristian.kunze@googlemail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/elusivedocks/backbone"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true,
+        "apcu-autoloader": false,
+        "vendor-dir": "Vendor"
+    },
+    "require": {
+        "php": "~7.2",
+        "elusivedocks/backbone": "dev-experiment"
+    },
+    "autoload": {
+        "psr-4": {
+            "ElusiveDocks\\LaunchPad\\": "\\"
+        }
+    },
+    "require-dev": {
+    }
+}
